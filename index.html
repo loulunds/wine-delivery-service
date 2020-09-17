@@ -13,19 +13,27 @@
     <a href="/" class="navbar-brand">Wine Box</a>
     <ul class="navbar-nav mr-auto">
         <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item mr-2"><a class="nav-link" href="/about">Home</a></li>
+        <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+        <!-- d-sm-none
+            if we don't want to display on xs screen-->
+        <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
     </ul>
-    <p class="navbar-text my-auto mr-2">Great wine delivered to your doorstep!</p>
-    <a href="/login">Sign in/ Sign up!</a>
+    <div class="d-none d-md-block">
+        <p class="navbar-text my-auto mr-2">Great wine delivered to your doorstep!</p>
+        <a href="/login">Sign in/ Sign up!</a>
+    </div>
     </nav>
-    <article class="container">
+    <article class="container mt-3">
         <!-- Callout -->
         <div class="row">
             <div class="col-12">
-                <section class="callout">
+                <section class="callout jumbotron text-center">
                     <h1>The finest wines delivered to your doorstep.</h1>
-                    <p class="lead">Sign up today to start receiving the world's best wines every month. 
-                        <s>$19.99</s>
+                    <p class="lead">Sign up today to start receiving the world's best wines every month.
+                        <!--hidden only on above small --> 
+                        <s class="d-none d-sm-inline">$19.99</s>
+                        <!--hidden on above small, inline in mobile-->
+                        <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong>
                     </p>
                     <button class="btn btn-success btn-lg">Sign Up!</button>
@@ -40,20 +48,20 @@
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Quotes:</h2>
                 </div>
                 <div class="row">
-                    <div class="col-12 md-6">
-                        <blockquote class="blockquote">
+                    <div class="col-12 col-md-6">
+                        <blockquote class="blockquote col-12 col-md-6">
                             <p>I've been introduced to more than 10 great international wines I never knew about.</p>
                             <p>- Jane Doe</p>
                         </blockquote>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 md-6">
-                        <blockquote class="blockquote">
+                    <div class="col-12 col-md-6">
+                        <blockquote class="blockquote col-12 col-md-6">
                             <p>I haven't been sober for months!</p>
                             <p>- Jane Doe</p>
                         </blockquote>
@@ -68,7 +76,7 @@
         <!-- Features -->
         <section class="features">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Features:</h2>
                 </div>
             </div>
