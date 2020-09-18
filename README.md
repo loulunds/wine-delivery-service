@@ -1,3 +1,3 @@
-Wine Box
+Whiskey Drop website
 
-An HTML and CSS website with focus on Bootstrap Gridsystem
+An HTML and CSS website with focus on Bootstrap
